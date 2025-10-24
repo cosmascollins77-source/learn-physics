@@ -202,6 +202,27 @@ html, body {
   transform: translateY(-2px);
 }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .topics-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .topics-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .level-header {
     padding: 1rem;
@@ -221,5 +242,146 @@ html, body {
   
   .senior-one, .content-container, .topics-container, .resources-grid {
     width: 100vw;
+  }
+  
+  .topic-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .topic-card p {
+    font-size: 0.85rem;
+  }
+  
+  .resource-card h3 {
+    font-size: 1rem;
+  }
+  
+  .resource-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .level-header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .intro-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .intro-section p {
+    font-size: 0.85rem;
+  }
+  
+  .topics-container h2, .resources-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .topic-card {
+    padding: 0.8rem;
+  }
+  
+  .topic-card h3 {
+    font-size: 1rem;
+  }
+  
+  .topic-card p {
+    font-size: 0.8rem;
+  }
+  
+  .learn-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  
+  .resource-card {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .level-header h1 {
+    font-size: 1.1rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .intro-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .intro-section p {
+    font-size: 0.8rem;
+  }
+  
+  .topics-container h2, .resources-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .topic-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .topic-card p {
+    font-size: 0.75rem;
+  }
+  
+  .learn-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .resource-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .resource-card p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Desktop Optimizations */
+@media (min-width: 1200px) {
+  .level-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .topics-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto 1rem;
+  }
+  
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .level-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .topics-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
