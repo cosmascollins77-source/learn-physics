@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SeniorTwo.css';
 
 const SeniorTwo = () => {
@@ -6,33 +7,67 @@ const SeniorTwo = () => {
     {
       id: 1,
       title: 'Heat',
-      description: 'Thermal energy, temperature, and heat transfer.'
+      description: 'Thermal energy, temperature scales, heat transfer mechanisms, and thermal expansion.'
     },
     {
       id: 2,
       title: 'Wave Motion',
-      description: 'Properties of waves and wave behavior.'
+      description: 'Properties of waves, types of waves, wave behavior, and sound waves.'
     },
     {
       id: 3,
       title: 'Magnetism',
-      description: 'Magnetic fields and electromagnetic interactions.'
+      description: 'Magnetic fields, magnetic materials, and electromagnetic interactions.'
     }
   ];
 
   return (
     <div className="senior-two">
-      <h1>Senior Two Physics</h1>
-      <p className="subtitle">Exploring heat, waves, and magnetism</p>
+      <div className="level-header">
+        <h1>Senior Two Physics</h1>
+        <p className="subtitle">Exploring heat, waves, and magnetism</p>
+        <Link to="/" className="back-link">← Back to Curriculum</Link>
+      </div>
       
-      <div className="topics-container">
-        {topics.map(topic => (
-          <div key={topic.id} className="topic-card">
-            <h2>{topic.title}</h2>
-            <p>{topic.description}</p>
-            <button className="learn-button">Learn More</button>
+      <div className="content-container">
+        <div className="intro-section">
+          <h2>Course Overview</h2>
+          <p>
+            Senior Two Physics builds upon the foundations established in Senior One, 
+            introducing students to thermal physics, wave phenomena, and magnetism. 
+            These topics are essential for understanding more complex physics concepts 
+            in later years.
+          </p>
+        </div>
+        
+        <div className="topics-container">
+          <h2>Topics Covered</h2>
+          {topics.map(topic => (
+            <div key={topic.id} className="topic-card">
+              <h3>{topic.title}</h3>
+              <p>{topic.description}</p>
+              <button className="learn-button">Learn More</button>
+            </div>
+          ))}
+        </div>
+        
+        <div className="resources-section">
+          <h2>Learning Resources</h2>
+          <div className="resources-grid">
+            <div className="resource-card">
+              <h3>Textbook</h3>
+              <p>Ugandan High School Physics Textbook - Senior Two</p>
+            </div>
+            <div className="resource-card">
+              <h3>Practice Problems</h3>
+              <p>End-of-chapter exercises with solutions</p>
+            </div>
+            <div className="resource-card">
+              <h3>Video Lessons</h3>
+              <p>Interactive video explanations for each topic</p>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
