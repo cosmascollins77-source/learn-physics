@@ -7,17 +7,20 @@ const SeniorTwo = () => {
     {
       id: 1,
       title: 'Heat',
-      description: 'Thermal energy, temperature scales, heat transfer mechanisms, and thermal expansion.'
+      description: 'Thermal energy, temperature scales, heat transfer mechanisms, and thermal expansion.',
+      path: '/senior-two/heat'
     },
     {
       id: 2,
       title: 'Wave Motion',
-      description: 'Properties of waves, types of waves, wave behavior, and sound waves.'
+      description: 'Properties of waves, types of waves, wave behavior, and sound waves.',
+      path: '/senior-two/wave-motion'
     },
     {
       id: 3,
       title: 'Magnetism',
-      description: 'Magnetic fields, magnetic materials, and electromagnetic interactions.'
+      description: 'Magnetic fields, magnetic materials, and electromagnetic interactions.',
+      path: '/senior-two/magnetism'
     }
   ];
 
@@ -46,7 +49,9 @@ const SeniorTwo = () => {
             <div key={topic.id} className="topic-card">
               <h3>{topic.title}</h3>
               <p>{topic.description}</p>
-              <button className="learn-button">Learn More</button>
+              <Link to={topic.path} className="learn-button">
+                Learn More
+              </Link>
             </div>
           ))}
         </div>
@@ -65,6 +70,19 @@ const SeniorTwo = () => {
             <div className="resource-card">
               <h3>Video Lessons</h3>
               <p>Interactive video explanations for each topic</p>
+            </div>
+            <div className="resource-card">
+              <h3>Complete Notes</h3>
+              <p>
+                <a 
+                  href="/assets/notes/UCE PHYSICS COMPLETE TEXT-1.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="notes-link"
+                >
+                  Download Complete Physics Notes (PDF)
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -65,6 +65,19 @@ const SeniorThree = () => {
               <h3>Video Lessons</h3>
               <p>Interactive video explanations for each topic</p>
             </div>
+            <div className="resource-card">
+              <h3>Complete Notes</h3>
+              <p>
+                <a 
+                  href="/assets/notes/UCE PHYSICS COMPLETE TEXT-1.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="notes-link"
+                >
+                  Download Complete Physics Notes (PDF)
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

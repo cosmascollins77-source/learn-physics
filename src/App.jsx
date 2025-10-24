@@ -7,6 +7,12 @@ import SeniorThree from './senior-three/SeniorThree'
 import SeniorFour from './senior-four/SeniorFour'
 import SeniorFive from './senior-five/SeniorFive'
 import SeniorSix from './senior-six/SeniorSix'
+import IntroductionToPhysics from './senior-one/IntroductionToPhysics'
+import Measurements from './senior-one/Measurements'
+import Motion from './senior-one/Motion'
+import Heat from './senior-two/Heat'
+import WaveMotion from './senior-two/WaveMotion'
+import Magnetism from './senior-two/Magnetism'
 
 function App() {
   const navigate = useNavigate()
@@ -165,6 +171,26 @@ function App() {
                 </div>
               </section>
               
+              <section className="resources-section">
+                <h2>Additional Resources</h2>
+                <div className="resources-container">
+                  <div className="resource-card">
+                    <h3>Complete Physics Notes</h3>
+                    <p>
+                      Access the complete physics notes covering all topics from Senior One to Senior Six.
+                    </p>
+                    <a 
+                      href="/assets/notes/UCE PHYSICS COMPLETE TEXT-1.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="download-button"
+                    >
+                      Download PDF Notes
+                    </a>
+                  </div>
+                </div>
+              </section>
+              
               <section className="about-section">
                 <h2>About This Learning Platform</h2>
                 <div className="about-content">
@@ -182,7 +208,13 @@ function App() {
             </div>
           } />
           <Route path="/senior-one" element={<SeniorOne />} />
+          <Route path="/senior-one/introduction-to-physics" element={<IntroductionToPhysics />} />
+          <Route path="/senior-one/measurements" element={<Measurements />} />
+          <Route path="/senior-one/motion" element={<Motion />} />
           <Route path="/senior-two" element={<SeniorTwo />} />
+          <Route path="/senior-two/heat" element={<Heat />} />
+          <Route path="/senior-two/wave-motion" element={<WaveMotion />} />
+          <Route path="/senior-two/magnetism" element={<Magnetism />} />
           <Route path="/senior-three" element={<SeniorThree />} />
           <Route path="/senior-four" element={<SeniorFour />} />
           <Route path="/senior-five" element={<SeniorFive />} />
