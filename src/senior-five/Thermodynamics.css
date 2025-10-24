@@ -1,0 +1,483 @@
+.physics-topic {
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.topic-header {
+  background: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.topic-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+  opacity: 0.9;
+}
+
+.back-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s;
+  display: inline-block;
+  margin: 0;
+}
+
+.back-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.learning-objectives {
+  background: #fdebd0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 0 0 2rem;
+  border-left: 4px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.learning-objectives h2 {
+  color: #2851a3;
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.learning-objectives ul {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.learning-objectives li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.topic-content h2 {
+  color: #2851a3;
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.topic-content h3 {
+  color: #2851a3;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.4rem;
+}
+
+.topic-content h4 {
+  color: #2851a3;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.topic-content h5 {
+  color: #2851a3;
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+}
+
+.topic-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 1rem;
+}
+
+.topic-content ul, .topic-content ol {
+  padding-left: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.topic-content li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.basic-concepts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.concept {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.concept h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.concept p {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.zeroth-law {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.law-statement {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.law-statement h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.temperature-scales {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.temperature-scales h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.first-law {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.first-law h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.first-law p {
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+.sign-convention {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.thermodynamic-processes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.process {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.process h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.process p {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+.heat-engines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.engine-components {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.engine-components h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.engine-efficiency {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.engine-efficiency h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.engine-efficiency p {
+  margin: 0 0 0.3rem;
+  font-weight: bold;
+}
+
+.second-law {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.kelvin-statement {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.kelvin-statement h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.clausius-statement {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.clausius-statement h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.entropy {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.entropy-definition {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.entropy-definition h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.entropy-definition p {
+  margin: 0 0 0.3rem;
+  font-weight: bold;
+}
+
+.entropy-principle {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.entropy-principle h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.carnot-engine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: hidden;
+}
+
+.carnot-cycle {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.carnot-cycle h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.carnot-efficiency {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.carnot-efficiency h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.carnot-efficiency p {
+  margin: 0 0 0.3rem;
+  font-weight: bold;
+}
+
+.practice-section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow-x: hidden;
+}
+
+.practice-section h2 {
+  color: #2851a3;
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.question {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  border-left: 3px solid #f39c12;
+  overflow-x: hidden;
+}
+
+.question h4 {
+  margin: 0 0 0.5rem;
+  color: #2851a3;
+}
+
+.question p {
+  margin: 0 0 1rem;
+}
+
+.show-answer {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.show-answer:hover {
+  background: #d35400;
+}
+
+.answer {
+  background: #fdebd0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  overflow-x: hidden;
+}
+
+.answer.hidden {
+  display: none;
+}
+
+.answer p {
+  margin: 0;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .topic-header {
+    padding: 1rem;
+  }
+  
+  .topic-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .content-container {
+    padding: 0.5rem;
+  }
+  
+  .basic-concepts, .zeroth-law, .first-law, .thermodynamic-processes, .heat-engines, .second-law, .entropy, .carnot-engine {
+    grid-template-columns: 1fr;
+  }
+  
+  .physics-topic, .content-container {
+    width: 100vw;
+  }
+}

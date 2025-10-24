@@ -7,17 +7,20 @@ const SeniorFive = () => {
     {
       id: 1,
       title: 'Rotational Motion',
-      description: 'Motion of objects rotating around an axis, angular velocity, torque, and moment of inertia.'
+      description: 'Motion of objects rotating around an axis, angular velocity, torque, and moment of inertia.',
+      path: '/senior-five/rotational-motion'
     },
     {
       id: 2,
       title: 'Fluid Mechanics',
-      description: 'Behavior of fluids at rest and in motion, pressure, buoyancy, and fluid dynamics.'
+      description: 'Behavior of fluids at rest and in motion, pressure, buoyancy, and fluid dynamics.',
+      path: '/senior-five/fluid-mechanics'
     },
     {
       id: 3,
       title: 'Thermodynamics',
-      description: 'Laws governing heat and energy transformations, heat engines, and entropy.'
+      description: 'Laws governing heat and energy transformations, heat engines, and entropy.',
+      path: '/senior-five/thermodynamics'
     }
   ];
 
@@ -45,7 +48,9 @@ const SeniorFive = () => {
             <div key={topic.id} className="topic-card">
               <h3>{topic.title}</h3>
               <p>{topic.description}</p>
-              <button className="learn-button">Learn More</button>
+              <Link to={topic.path} className="learn-button">
+                Learn More
+              </Link>
             </div>
           ))}
         </div>

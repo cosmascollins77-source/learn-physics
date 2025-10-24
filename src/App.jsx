@@ -19,6 +19,9 @@ import Electromagnetism from './senior-three/Electromagnetism'
 import Optics from './senior-four/Optics'
 import ModernPhysics from './senior-four/ModernPhysics'
 import NuclearPhysics from './senior-four/NuclearPhysics'
+import RotationalMotion from './senior-five/RotationalMotion'
+import FluidMechanics from './senior-five/FluidMechanics'
+import Thermodynamics from './senior-five/Thermodynamics'
 
 function App() {
   const navigate = useNavigate()
@@ -78,7 +81,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <div className="header-content">
-          <h1>Ugandan High School Physics Curriculum</h1>
+          <h1>Uganda High School Physics Curriculum</h1>
           <p className="header-subtitle">Senior One to Senior Six</p>
         </div>
         <nav className="main-nav">
@@ -100,9 +103,10 @@ function App() {
           <Route path="/" element={
             <div className="home-page">
               <section className="hero-section">
+                <div className="group-5-banner">GROUP 5</div>
                 <div className="hero-content">
                   <h1>Master Physics with Our Comprehensive Curriculum Guide</h1>
-                  <p className="hero-subtitle">Designed specifically for Ugandan high school students following the national curriculum from Senior One to Senior Six</p>
+                  <p className="hero-subtitle">Designed specifically for Uganda high school students following the national curriculum from Senior One to Senior Six</p>
                   <div className="hero-buttons">
                     <button className="cta-button primary" onClick={() => navigate('/senior-one')}>
                       Start Learning
@@ -123,7 +127,7 @@ function App() {
                   <div className="feature-card">
                     <div className="feature-icon">📚</div>
                     <h3>Complete Curriculum Coverage</h3>
-                    <p>All topics from the Ugandan national physics curriculum for Senior One to Senior Six</p>
+                    <p>All topics from the Uganda national physics curriculum for Senior One to Senior Six</p>
                   </div>
                   <div className="feature-card">
                     <div className="feature-icon">🔬</div>
@@ -146,7 +150,7 @@ function App() {
               <section id="curriculum" className="curriculum-section">
                 <h2>Curriculum Overview</h2>
                 <p className="section-description">
-                  Our platform covers all the essential topics in the Ugandan high school physics curriculum, 
+                  Our platform covers all the essential topics in the Uganda high school physics curriculum, 
                   organized by class level to ensure progressive learning.
                 </p>
                 
@@ -201,7 +205,7 @@ function App() {
                 <h2>About This Learning Platform</h2>
                 <div className="about-content">
                   <p>
-                    This educational platform has been specifically designed to support students in Ugandan high schools 
+                    This educational platform has been specifically designed to support students in Uganda high schools 
                     studying physics from Senior One through to Senior Six. Our content aligns with the national curriculum 
                     and is structured to build understanding progressively.
                   </p>
@@ -230,6 +234,9 @@ function App() {
           <Route path="/senior-four/modern-physics" element={<ModernPhysics />} />
           <Route path="/senior-four/nuclear-physics" element={<NuclearPhysics />} />
           <Route path="/senior-five" element={<SeniorFive />} />
+          <Route path="/senior-five/rotational-motion" element={<RotationalMotion />} />
+          <Route path="/senior-five/fluid-mechanics" element={<FluidMechanics />} />
+          <Route path="/senior-five/thermodynamics" element={<Thermodynamics />} />
           <Route path="/senior-six" element={<SeniorSix />} />
         </Routes>
       </main>
@@ -237,7 +244,7 @@ function App() {
       <footer className="app-footer">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Ugandan Physics Curriculum</h3>
+            <h3>Uganda Physics Curriculum</h3>
             <p>Comprehensive learning resources for Senior One to Senior Six students</p>
           </div>
           
@@ -259,7 +266,7 @@ function App() {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Ugandan High School Physics Curriculum. All rights reserved.</p>
+          <p>&copy; 2025 Uganda High School Physics Curriculum. All rights reserved.</p>
         </div>
       </footer>
     </div>
