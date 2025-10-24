@@ -13,6 +13,9 @@ import Motion from './senior-one/Motion'
 import Heat from './senior-two/Heat'
 import WaveMotion from './senior-two/WaveMotion'
 import Magnetism from './senior-two/Magnetism'
+import Electrostatics from './senior-three/Electrostatics'
+import CurrentElectricity from './senior-three/CurrentElectricity'
+import Electromagnetism from './senior-three/Electromagnetism'
 
 function App() {
   const navigate = useNavigate()
@@ -216,6 +219,9 @@ function App() {
           <Route path="/senior-two/wave-motion" element={<WaveMotion />} />
           <Route path="/senior-two/magnetism" element={<Magnetism />} />
           <Route path="/senior-three" element={<SeniorThree />} />
+          <Route path="/senior-three/electrostatics" element={<Electrostatics />} />
+          <Route path="/senior-three/current-electricity" element={<CurrentElectricity />} />
+          <Route path="/senior-three/electromagnetism" element={<Electromagnetism />} />
           <Route path="/senior-four" element={<SeniorFour />} />
           <Route path="/senior-five" element={<SeniorFive />} />
           <Route path="/senior-six" element={<SeniorSix />} />

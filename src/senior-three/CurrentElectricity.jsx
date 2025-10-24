@@ -47,8 +47,8 @@ const CurrentElectricity = () => {
               <li>Q = Charge (Coulomb, C)</li>
               <li>t = Time (Second, s)</li>
             </ul>
-            <p><strong>Direction:</strong> Conventional current flows from positive to negative terminal</li>
-            <p><strong>Actual flow:</strong> Electrons flow from negative to positive terminal</li>
+            <p><strong>Direction:</strong> Conventional current flows from positive to negative terminal</p>
+            <p><strong>Actual flow:</strong> Electrons flow from negative to positive terminal</p>
           </div>
           
           <h3>Types of Electric Current</h3>

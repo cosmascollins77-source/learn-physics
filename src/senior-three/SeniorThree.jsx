@@ -7,17 +7,20 @@ const SeniorThree = () => {
     {
       id: 1,
       title: 'Electrostatics',
-      description: 'Study of electric charges at rest, Coulomb\'s law, electric fields, and electric potential.'
+      description: 'Study of electric charges at rest, Coulomb\'s law, electric fields, and electric potential.',
+      path: '/senior-three/electrostatics'
     },
     {
       id: 2,
       title: 'Current Electricity',
-      description: 'Flow of electric charges, Ohm\'s law, electrical circuits, and electrical power.'
+      description: 'Flow of electric charges, Ohm\'s law, electrical circuits, and electrical power.',
+      path: '/senior-three/current-electricity'
     },
     {
       id: 3,
       title: 'Electromagnetism',
-      description: 'Relationship between electric and magnetic fields, electromagnets, and electromagnetic induction.'
+      description: 'Relationship between electric and magnetic fields, electromagnets, and electromagnetic induction.',
+      path: '/senior-three/electromagnetism'
     }
   ];
 
@@ -45,7 +48,9 @@ const SeniorThree = () => {
             <div key={topic.id} className="topic-card">
               <h3>{topic.title}</h3>
               <p>{topic.description}</p>
-              <button className="learn-button">Learn More</button>
+              <Link to={topic.path} className="learn-button">
+                Learn More
+              </Link>
             </div>
           ))}
         </div>
