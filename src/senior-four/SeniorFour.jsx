@@ -7,17 +7,20 @@ const SeniorFour = () => {
     {
       id: 1,
       title: 'Optics',
-      description: 'Behavior and properties of light, reflection, refraction, lenses, and optical instruments.'
+      description: 'Study of light behavior, reflection, refraction, lenses, and optical instruments.',
+      path: '/senior-four/optics'
     },
     {
       id: 2,
       title: 'Modern Physics',
-      description: 'Atomic structure, quantum theory, photoelectric effect, and atomic spectra.'
+      description: 'Quantum mechanics, relativity, atomic structure, and lasers.',
+      path: '/senior-four/modern-physics'
     },
     {
       id: 3,
       title: 'Nuclear Physics',
-      description: 'Structure of the nucleus, radioactive decay, nuclear reactions, and applications.'
+      description: 'Atomic nuclei, radioactive decay, nuclear reactions, and applications.',
+      path: '/senior-four/nuclear-physics'
     }
   ];
 
@@ -25,7 +28,7 @@ const SeniorFour = () => {
     <div className="senior-four">
       <div className="level-header">
         <h1>Senior Four Physics</h1>
-        <p className="subtitle">Exploring light and modern physics concepts</p>
+        <p className="subtitle">Exploring light, modern physics, and nuclear phenomena</p>
         <Link to="/" className="back-link">← Back to Curriculum</Link>
       </div>
       
@@ -33,9 +36,9 @@ const SeniorFour = () => {
         <div className="intro-section">
           <h2>Course Overview</h2>
           <p>
-            Senior Four Physics introduces students to the fascinating world of optics and modern physics. 
-            This course covers the behavior of light, atomic physics, and nuclear physics, 
-            providing insights into both classical and contemporary physics concepts.
+            Senior Four Physics expands students' understanding to include the behavior of light, 
+            modern physics concepts, and nuclear phenomena. This course bridges classical and modern physics, 
+            preparing students for advanced studies in physics and related fields.
           </p>
         </div>
         
@@ -45,7 +48,9 @@ const SeniorFour = () => {
             <div key={topic.id} className="topic-card">
               <h3>{topic.title}</h3>
               <p>{topic.description}</p>
-              <button className="learn-button">Learn More</button>
+              <Link to={topic.path} className="learn-button">
+                Learn More
+              </Link>
             </div>
           ))}
         </div>

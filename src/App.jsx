@@ -16,6 +16,9 @@ import Magnetism from './senior-two/Magnetism'
 import Electrostatics from './senior-three/Electrostatics'
 import CurrentElectricity from './senior-three/CurrentElectricity'
 import Electromagnetism from './senior-three/Electromagnetism'
+import Optics from './senior-four/Optics'
+import ModernPhysics from './senior-four/ModernPhysics'
+import NuclearPhysics from './senior-four/NuclearPhysics'
 
 function App() {
   const navigate = useNavigate()
@@ -223,6 +226,9 @@ function App() {
           <Route path="/senior-three/current-electricity" element={<CurrentElectricity />} />
           <Route path="/senior-three/electromagnetism" element={<Electromagnetism />} />
           <Route path="/senior-four" element={<SeniorFour />} />
+          <Route path="/senior-four/optics" element={<Optics />} />
+          <Route path="/senior-four/modern-physics" element={<ModernPhysics />} />
+          <Route path="/senior-four/nuclear-physics" element={<NuclearPhysics />} />
           <Route path="/senior-five" element={<SeniorFive />} />
           <Route path="/senior-six" element={<SeniorSix />} />
         </Routes>
