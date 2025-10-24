@@ -3,80 +3,80 @@ import { Link } from 'react-router-dom';
 import './SeniorSix.css';
 
 const SeniorSix = () => {
-  const topics = [
-    {
-      id: 1,
-      title: 'Quantum Mechanics',
-      description: 'Physics of subatomic particles, wave-particle duality, and quantum theory.'
-    },
-    {
-      id: 2,
-      title: 'Relativity',
-      description: 'Special and general relativity theories, spacetime, and gravitational effects.'
-    },
-    {
-      id: 3,
-      title: 'Astrophysics',
-      description: 'Physics of celestial objects, stellar evolution, and cosmological phenomena.'
-    }
-  ];
-
   return (
     <div className="senior-six">
       <div className="level-header">
         <h1>Senior Six Physics</h1>
-        <p className="subtitle">Advanced topics in modern physics</p>
-        <Link to="/" className="back-link">← Back to Curriculum</Link>
+        <p className="subtitle">Advanced Topics in Modern Physics</p>
+        <Link to="/" className="back-link">← Back to Home</Link>
       </div>
       
       <div className="content-container">
         <div className="intro-section">
           <h2>Course Overview</h2>
           <p>
-            Senior Six Physics represents the culmination of the Ugandan high school physics curriculum. 
-            Students will explore the frontiers of modern physics, including quantum mechanics, relativity, 
-            and astrophysics, preparing them for advanced studies or careers in science and technology.
+            Senior Six Physics explores the frontiers of modern physics, including quantum mechanics, 
+            relativity, and astrophysics. These advanced topics provide insights into the fundamental 
+            nature of reality, from the smallest particles to the largest structures in the universe.
+          </p>
+          <p>
+            This course builds on the foundational knowledge from previous years and introduces 
+            students to cutting-edge concepts that have shaped our understanding of the physical world.
           </p>
         </div>
         
+        <h2 className="topics-container">Core Topics</h2>
         <div className="topics-container">
-          <h2>Topics Covered</h2>
-          {topics.map(topic => (
-            <div key={topic.id} className="topic-card">
-              <h3>{topic.title}</h3>
-              <p>{topic.description}</p>
-              <button className="learn-button">Learn More</button>
-            </div>
-          ))}
+          <div className="topic-card">
+            <h3>Quantum Mechanics</h3>
+            <p>
+              Explore the strange and fascinating world of quantum physics, where particles 
+              exhibit both wave and particle properties, and uncertainty rules.
+            </p>
+            <Link to="/senior-six/quantum-mechanics" className="learn-button">
+              Learn More
+            </Link>
+          </div>
+          
+          <div className="topic-card">
+            <h3>Relativity</h3>
+            <p>
+              Understand Einstein's revolutionary theories that transformed our concepts of 
+              space, time, and gravity, and their profound implications for the universe.
+            </p>
+            <Link to="/senior-six/relativity" className="learn-button">
+              Learn More
+            </Link>
+          </div>
+          
+          <div className="topic-card">
+            <h3>Astrophysics</h3>
+            <p>
+              Journey through the cosmos to study stars, galaxies, black holes, and the 
+              evolution of the universe from the Big Bang to the present day.
+            </p>
+            <Link to="/senior-six/astrophysics" className="learn-button">
+              Learn More
+            </Link>
+          </div>
         </div>
         
         <div className="resources-section">
-          <h2>Learning Resources</h2>
+          <h2>Additional Resources</h2>
           <div className="resources-grid">
             <div className="resource-card">
-              <h3>Textbook</h3>
-              <p>Ugandan High School Physics Textbook - Senior Six</p>
-            </div>
-            <div className="resource-card">
-              <h3>Practice Problems</h3>
-              <p>End-of-chapter exercises with solutions</p>
-            </div>
-            <div className="resource-card">
-              <h3>Video Lessons</h3>
-              <p>Interactive video explanations for each topic</p>
-            </div>
-            <div className="resource-card">
-              <h3>Complete Notes</h3>
+              <h3>Complete Physics Notes</h3>
               <p>
-                <a 
-                  href="/assets/notes/UCE PHYSICS COMPLETE TEXT-1.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="notes-link"
-                >
-                  Download Complete Physics Notes (PDF)
-                </a>
+                Access the complete physics notes covering all topics from Senior One to Senior Six.
               </p>
+              <a 
+                href="/assets/notes/UCE PHYSICS COMPLETE TEXT-1.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="notes-link"
+              >
+                Download PDF Notes
+              </a>
             </div>
           </div>
         </div>

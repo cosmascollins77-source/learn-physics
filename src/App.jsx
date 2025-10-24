@@ -22,6 +22,9 @@ import NuclearPhysics from './senior-four/NuclearPhysics'
 import RotationalMotion from './senior-five/RotationalMotion'
 import FluidMechanics from './senior-five/FluidMechanics'
 import Thermodynamics from './senior-five/Thermodynamics'
+import QuantumMechanics from './senior-six/QuantumMechanics'
+import Relativity from './senior-six/Relativity'
+import Astrophysics from './senior-six/Astrophysics'
 
 function App() {
   const navigate = useNavigate()
@@ -238,6 +241,9 @@ function App() {
           <Route path="/senior-five/fluid-mechanics" element={<FluidMechanics />} />
           <Route path="/senior-five/thermodynamics" element={<Thermodynamics />} />
           <Route path="/senior-six" element={<SeniorSix />} />
+          <Route path="/senior-six/quantum-mechanics" element={<QuantumMechanics />} />
+          <Route path="/senior-six/relativity" element={<Relativity />} />
+          <Route path="/senior-six/astrophysics" element={<Astrophysics />} />
         </Routes>
       </main>
       
